@@ -23,4 +23,9 @@ export class PageEmployeesComponent {
 			this.employees = response.data;
 		})();
 	}
+
+	employeeHasSearchText(emp: IEmployee) {
+		const bulkText = emp.firstName + '#' + emp.lastName + '#' + emp.notes;
+		return bulkText.toLowerCase().includes(this.searchText.toLowerCase());
+	}
 }
