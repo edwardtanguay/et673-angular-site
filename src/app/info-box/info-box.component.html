@@ -6,7 +6,7 @@
 	<p *ngIf="status === 'danger'" [ngStyle]="{ color: statusColor }">
 		please read
 	</p>
-	<p class="text-2xl text-yellow-300">{{ title }}</p>
+	<p class="text-2xl text-yellow-300">{{ title | uppercase }}</p>
 	<p class="text-gray-200 italic">{{ body }}</p>
 	<p class="text-orange-300">{{ dateOfInfo }}</p>
 	<p class="text-green-300">{{ author }}</p>
