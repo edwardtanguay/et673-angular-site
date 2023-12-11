@@ -1,0 +1,3 @@
+- .. setup full menu
+- make default redirect (/)
+- make 404 page
