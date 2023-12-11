@@ -10,6 +10,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Testing';
-	message = 'hello';
+  title = 'The Info Site';
+	message = 'This is a test.';
 }
