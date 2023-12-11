@@ -12,12 +12,12 @@ export class InfoBoxComponent {
 	@Input() title = '(title)';
 	@Input() body = '(body)';
 	@Input() author = '(author)';
-	@Input() status = '';
+	@Input() status = '(status unknown)';
 
 	dateOfInfo = 'Dec 23, 2022';
 	statusColor = '';
 
 	ngOnInit() {
-		this.statusColor = this.status === 'success' ? 'lightgreen' : 'tomato';
+		this.statusColor = this.status === 'success' ? 'lightgreen' : this.status === 'danger' ? 'tomato' : 'gray';
 	}
 }
