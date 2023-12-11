@@ -10,14 +10,18 @@
 	<p class="text-orange-300">{{ dateOfInfo }}</p>
 	<p class="text-green-300">{{ author }}</p>
 	<p class="text-white">STATUS: {{ status }}</p>
-	<div
-		[ngSwitch]="status"
-		class="border-t border-green-900 mt-5 pt-2 text-gray-400"
-	>
-		<span *ngSwitchCase="'danger'">This info-box warns a user.</span>
-		<span *ngSwitchCase="'success'"
-			>Success is displayed when no action is required.</span
+
+	<button class="mt-4" (click)="showDevInfo = !showDevInfo">Toggle Dev Info</button>
+	<div *ngIf="showDevInfo">
+		<div
+			[ngSwitch]="status"
+			class="border-t border-green-900 mt-5 pt-2 text-gray-400"
 		>
-		<span *ngSwitchDefault>Unknown status code: {{ status }}</span>
+			<span *ngSwitchCase="'danger'">This info-box warns a user.</span>
+			<span *ngSwitchCase="'success'"
+				>Success is displayed when no action is required.</span
+			>
+			<span *ngSwitchDefault>Unknown status code: {{ status }}</span>
+		</div>
 	</div>
 </div>

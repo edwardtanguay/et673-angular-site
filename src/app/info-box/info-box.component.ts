@@ -16,6 +16,7 @@ export class InfoBoxComponent {
 
 	dateOfInfo = 'Dec 23, 2022';
 	statusColor = '';
+	showDevInfo = false;
 
 	ngOnInit() {
 		this.statusColor = this.status === 'success' ? 'lightgreen' : this.status === 'danger' ? 'tomato' : 'gray';
