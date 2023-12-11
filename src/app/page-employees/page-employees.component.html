@@ -1,5 +1,7 @@
 <p class="mt-4">There are {{ employees.length }} employees.</p>
 
+<input type="text" class="text-2xl mt-4 rounded" [(ngModel)]="searchText"/>
+
 <div *ngFor="let emp of employees" class="bg-orange-800 mt-4 p-2 rounded-lg w-5/12">
 	<p class="font-bold text-2xl">{{ emp.firstName }} {{emp.lastName}}</p>
 	<p class="italic text-gray-300">{{emp.notes}}</p>
