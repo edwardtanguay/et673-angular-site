@@ -1,6 +1,7 @@
-<div class="bg-blue-900 w-72 p-2 rounded mt-4">
+<div class="bg-blue-900 w-72 p-2 rounded mt-4" [ngStyle]="{border: '5px solid ' + statusColor}">
 	<p class="text-2xl text-yellow-300">{{title}}</p>
 	<p class="text-gray-200 italic">{{body}}</p>
 	<p class="text-orange-300">{{dateOfInfo}}</p>
 	<p class="text-green-300">{{author}}</p>
+	<p class="text-white">STATUS: {{status}}</p>
 </div>
