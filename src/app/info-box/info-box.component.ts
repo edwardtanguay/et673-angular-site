@@ -10,4 +10,6 @@ import { Component, Input } from '@angular/core';
 export class InfoBoxComponent {
 	@Input() title = '(title)';
 	@Input() body = '(body)';
+	@Input() author = '(author)';
+	dateOfInfo = 'Dec 23, 2022';
 }
