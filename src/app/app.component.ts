@@ -10,5 +10,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'et673-angular-site';
+  title = 'Testing';
+	message = 'hello';
 }
