@@ -22,6 +22,7 @@ export class InfoBoxComponent {
 
 	ngOnInit() {
 		this.statusColor = this.status === 'success' ? 'lightgreen' : this.status === 'danger' ? 'tomato' : 'gray';
+		this.highlighted = this.highlight === 'true';
 	}
 
 	handleShowDevInfoToggle = () => {
