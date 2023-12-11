@@ -23,6 +23,6 @@ export class InfoBoxComponent {
 	}
 
 	handleShowDevInfoToggle = () => {
-		alert('clicked')
+		this.showDevInfo = !this.showDevInfo;
 	}
 }
